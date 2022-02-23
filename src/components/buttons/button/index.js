@@ -2,11 +2,15 @@ import React from "react";
 import styled from "@emotion/styled";
 
 const ButtonContainer = styled.button`
-  background-color: white;
   border-radius: 0.5rem;
-  width: 5rem;
-  height: 2rem;
-  margin: 1rem;
+  height: 40px;
+  width: 100px;
+  text-align: center;
+  margin-left: 5px;
+  background-color: #2b6bf3;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
 `;
 
 function Button({ title }) {

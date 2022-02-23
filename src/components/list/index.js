@@ -3,16 +3,22 @@ import styled from "@emotion/styled";
 import ListItem from "./listItem";
 
 const ListContainer = styled.div`
-  background-color: khaki;
-
+  border-left: 1px solid gray;
+  height: 100%;
+  width: calc(20% - 1px);
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  align-items: center;
+  overflow: scroll;
 `;
 
 function List() {
   return (
     <ListContainer>
+      <ListItem />
+      <ListItem />
+      <ListItem />
+      <ListItem />
       <ListItem />
       <ListItem />
       <ListItem />
