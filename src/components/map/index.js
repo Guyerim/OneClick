@@ -1,6 +1,8 @@
 import React, { useCallback, useEffect, useRef } from "react";
 import styled from "@emotion/styled";
+import ReactDOMServer from "react-dom/server";
 import { getIconHTML } from "../../utils/getIconHTML";
+import InfoWindow from "./infoWindow";
 
 function Map() {
   const mapRef = useRef(null);
@@ -29,9 +31,18 @@ function Map() {
         position.coords.longitude
       );
       mapRef.current.setCenter(loc);
-      const i = new Tmapv2.Marker({
+      /*
+            const i = new Tmapv2.Marker({
+              position: loc,
+              iconHTML: html,
+              map: mapRef.current,
+            });
+             */
+      const info = new Tmapv2.InfoWindow({
         position: loc,
-        iconHTML: html,
+        content: ReactDOMServer.renderToString(<InfoWindow />),
+        type: 2,
+        border: "0px solid #FF0000",
         map: mapRef.current,
       });
     });
@@ -39,6 +50,7 @@ function Map() {
 
   useEffect(() => {
     initTMap();
+    console.log(ReactDOMServer.renderToString(<InfoWindow />));
   }, [initTMap]);
 
   return <div id="TMap" />;
