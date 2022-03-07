@@ -1,0 +1,93 @@
+@font-face {
+  font-family: 'ONE-Mobile-POP';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/ONE-Mobile-POP.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+.text{
+  border: 1px solid black;
+  margin-top: 1px;
+}
+.button_2 {
+  border: 0;
+  outline: none;
+  font-size: 20px;
+  margin: 15px;
+  background: #2b6bf3;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 10px;
+  font-family: ONE-Mobile-POP;
+}
+.table{
+background-color:#14a308;
+width:30px;
+height:30px;
+border-radius:75px;
+text-align:center;
+margin: 30px;
+font-size:0px;
+vertical-align:middle;
+line-height:10px;
+margin-top: 10px;
+margin-bottom: 20px;
+}
+.shop{
+  background-color: whitesmoke;
+  color: rgb(0, 0, 0);
+}
+.rivew{
+  display: flex;
+}
+.rivew > div{
+  flex: 1;
+}
+.box1{
+  background-color: whitesmoke;
+  border: 5px solid grey;
+  margin: 0px;
+  text-align: center;
+}
+.box2{
+  background-color: whitesmoke;
+  margin: 0px;
+  text-align: center;
+}
+.and{
+  text-align: right;
+}
+.list-1{
+  background-color: #c9daff;
+  border: 2px solid #86adff;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+}
+.list-2{
+  background-color: #92b4ff;
+  border: 2px solid #86adff;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+}
+.list-3{
+  background-color: #5686ee;
+  border: 2px solid #86adff;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+}
+.box-star{
+  background-color: #ffffff;
+  border: 3px solid gray;
+  padding: 3px;
+  margin: 3px;
+}
+.box-title{
+  background-color: #d6d6d6;
+  border: 3px solid gray;
+  padding: 3px;
+  margin: 3px;
+}
+
